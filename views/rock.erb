@@ -1,4 +1,13 @@
-<h2>We played rock!</h2>
-<h2></h2>
-<h2></h2>
+<h2>You played rock!</h2>
+<h2>They played 
+    <% if @computer_move == 1 %>
+      rock!
+    <% elsif @computer_move == 2 %>
+      paper!
+    <% else %>
+      scissors!
+    <% end %>
+  </h2>
+<h2><%= @outcome %></h2>
+
 <a href="/">Rules</a>
